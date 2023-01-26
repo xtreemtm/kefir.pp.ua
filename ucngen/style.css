@@ -1,0 +1,71 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+* {
+    color: azure;
+    font-family: 'Source Sans Pro', sans-serif;
+    user-select: none;
+    cursor: default;
+}
+#main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cap1 {
+    color: purple;
+}
+
+div {
+    width: 100%;
+    text-align: center;
+}
+
+#scorecap {
+    font-size: 96px;
+    background: linear-gradient(rgb(166, 0, 231), rgb(255, 0, 255));
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#newrec {
+    margin-top: 12px;
+}
+
+#overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999999;
+    flex-wrap: wrap;
+    position: absolute;
+    flex-direction: column;
+}
+
+#overlay * {
+    color: black;
+}
+
+.btn {
+    background-color: blueviolet;
+    border-radius: 12px;
+    transition: padding 0.3s, width 0.3s;
+    width: fit-content !important;
+    padding: 8px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.btn:hover {
+    padding: 14px;
+}
